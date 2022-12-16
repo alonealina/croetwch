@@ -1,0 +1,693 @@
+/* iPad・スマホへの振り分け */
+
+/* 表示領域が1020px以上の場合に適用するスタイル（パソコン向け） */
+@media screen and (min-width: 1020px) {
+}	
+
+/* 表示領域が1019px以下の場合に適用するスタイル（スマホ向け） */
+@media screen and (max-width: 1019px) and (min-width: 551px) {
+}
+
+@font-face {
+    font-family: "Medio";
+    src:url("../font/medio.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Trajan";
+    src:url("../font/TrajanPro-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Ryumin";
+    src:url("../font/A-OTF-RyuminPr5-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Matisse";
+    src:url("../font/FOT-MatisseElegantoPro-M.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "serif";
+    src: url('../font/serif_medium_bt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Himalaya";
+    src: url('../font/Microsoft-Himalaya.ttf') format('truetype');
+}
+
+.top_bg {
+    background-image: url(../img/top_bg.png);
+}
+
+.about_bg {
+    background-image: url(../img/about_bg.png);
+}
+
+.about_bg_sp {
+    background-image: url(../img/about_bg_sp.png);
+}
+
+.recruit_bg {
+    background-image: url(../img/recruit_bg.png);
+}
+
+.recruit_bg_sp {
+    background-image: url(../img/recruit_bg_sp.png);
+}
+
+.service_bg {
+    background-image: url(../img/service_bg.png);
+}
+
+.service_bg_sp {
+    background-image: url(../img/service_bg_sp.png);
+}
+
+
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background: #fff 0% 0% no-repeat padding-box;
+    font: normal normal normal 16px/22px Bahnschrift;
+    color:#fff;
+}
+
+@media screen and (min-width: 501px) {
+    header {
+        display: flex!important;
+        justify-content: space-between;
+        width:100%;
+        position: fixed;
+        z-index: 9000;
+        padding-top: 15px;
+        padding-left: 150px;
+        padding-right: 50px;
+        transition: 0.5s;
+    }    
+}	
+
+@media screen and (max-width: 500px) {
+    header {
+        display: flex!important;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        z-index: 9000;
+        padding-top: 15px;
+        padding-left: 15px;
+        transition: 0.5s;
+    }
+}	
+
+
+header {
+    color:#fff;
+}
+
+
+
+
+a {
+    color:#262626;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#505050;
+    text-decoration: none;
+    opacity:0.7;
+}
+
+footer {
+    font: normal normal normal 12px/16px serif;
+    letter-spacing: 0px;
+    color: #000000;
+    padding:15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+#registration_pc {
+    overflow-x: hidden;
+}
+
+#registration_sp {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font: normal normal normal 12px/16px Open Sans;
+    color: #fff;
+}
+
+.body_sp {
+    min-width:375px;
+    text-align:-webkit-center;
+}
+
+li {
+    list-style: none;
+}
+
+select {
+    background: #626262 0% 0% no-repeat padding-box;
+    color:#fff;
+    font: normal normal 600 20px/30px Open Sans;
+    height:50px;
+    padding-left: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../img/select_bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+
+
+.none {
+    opacity: 0;
+    z-index:-1;
+}
+
+
+.header_logo_div {
+    width:100%;
+    height:120px;
+    padding: 30px 50px;
+    position: fixed;
+    z-index: 9000;
+}
+
+.header_logo {
+    margin: auto;
+    display: block;
+}
+
+.logo_img {
+    width: 8vw;
+}
+
+.sp_top_logo {
+    position: fixed;
+    top: 40vh;
+    z-index: 100;
+    width: 60vw;
+    display: block;
+    margin: 0 20vw;
+    transition: 1s;
+    opacity: 1;
+}
+.sp_top_img {
+    width: 100%;
+}
+
+.left_menu_div {
+    padding: 250px 5vw;
+    position: fixed;
+    font: normal normal normal 40px/40px Himalaya;
+    letter-spacing: 4px;
+    color: #707070;
+    z-index: 100;
+}
+
+.left_menu {
+    display: block;
+    margin: 15px 0;
+}
+.wrapper {
+    overflow: hidden;
+}
+
+.current {
+    color: #CB27AA;
+}
+
+.bg_div {
+    width: 100%;
+    position:fixed;
+    z-index: 1;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.page_name {
+    margin: 5vw 15vw;
+    font: normal normal 400 5vw/6vw Bahnschrift;
+    letter-spacing: 4px;
+    color: #545454;
+    position: fixed;
+    z-index: 100;
+    color: #FFFFFF;
+    opacity: 1;
+    transition: 1s;
+}
+.content {
+    color: #000;
+    position: fixed;
+    margin: 250px 8vw 0 22vw;
+    height: 100%;
+    overflow: scroll;
+    padding-bottom: 50px;
+    /*スクロールバー非表示（IE・Edge）*/
+    -ms-overflow-style: none;
+    /*スクロールバー非表示（Firefox）*/
+    scrollbar-width: none;
+    width: 70%;
+    z-index: 1000;
+    opacity: 1;
+    transition: 1s;
+}
+.content_sp {
+    color: #000;
+    position: fixed;
+    height: calc(100vh - 185px);
+    overflow: scroll;
+    margin-top: 60px;
+    padding: 0 4%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 100%;
+    z-index: 1000;
+    font: normal normal 300 12px/16px Futura;
+    letter-spacing: 1.2px;
+}
+
+/*スクロールバー非表示（Chrome・Safari）*/
+.content::-webkit-scrollbar, .content_sp::-webkit-scrollbar{
+    display:none;
+}
+
+
+.flex_div {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    font: normal normal 300 20px/26px serif;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+.column_div {
+    margin-top: 50px;
+    width: 100%;
+    font: normal normal 300 20px/26px serif;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+.about_20 {
+    width: 20%;
+    padding-right: 3%;
+}
+
+.about_30 {
+    width: 30%;
+    padding-right: 3%;
+}
+
+.about_50 {
+    width: 50%;
+    padding-right: 5%;
+}
+
+.content_name {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.recruit_big {
+    font-size: 30px;
+}
+
+.contact_flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contact_name {
+    margin: 10px 0 7px;
+    font: normal normal normal 20px/23px Arial;
+    letter-spacing: 0px;
+    color: #000;
+}
+
+.contact_name_sp {
+    margin: 10px 0 7px;
+    font: normal normal normal 18px/22px Himalaya;
+    letter-spacing: 0px;
+    color: #000;
+}
+
+.form_text {
+    width: 70%;
+}
+
+.form_textarea {
+    width: 70%;
+    height: 250px;
+}
+
+.send_button a {
+    font-size: 15px;
+    display: block;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    line-height: 40px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 30%;
+    margin-left: auto;
+}
+
+.contact_div {
+    width: 80%;
+    margin: 50px auto 0px;
+    color: #000;
+}
+.contact_div_sp {
+    padding:50px 20px;
+}
+.error_message {
+    text-align: center;
+    width: 100%;
+    color: #FF3D3D;
+}
+.error_message_sp {
+    margin: 10px 0;
+    width: 100%;
+    font: normal normal normal 12px/14px Arial;
+    letter-spacing: 0px;
+    color: #FF3D3D;
+}
+
+.page_title_sp {
+    width: 100%;
+    padding-top: 10px;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+    font: normal normal normal 26px/30px Himalaya;
+    color: #000;
+}
+.form_textarea_sp {
+    width: 100%;
+    height: 170px;
+}
+.form_text_sp {
+    width: 100%;
+}
+
+.mail_comp_div {
+    margin: 100px;
+    font: normal normal 300 27px/34px serif;
+    text-align: center;
+}
+
+.mail_comp_div_sp {
+    font: normal normal normal 12px/14px Arial;
+    letter-spacing: 0px;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.service_menu {
+    display: block;
+    font: normal normal normal 50px/60px Himalaya;
+    letter-spacing: 5px;
+    color: #545454;
+    margin-top: 30px;
+}
+
+.close_btn {
+    font: normal normal normal 12px/16px serif;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background: #000000 ;
+    padding:3px 20px;
+    margin-left: 30px;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.service_text {
+    font: normal normal 300 17px/28px serif;
+    letter-spacing: 2px;
+    color: #000000;
+    margin:30px 0;
+}
+
+.service_img {
+    display: block;
+    width: 100%;
+}
+
+.service_img_sp {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#service_menu {
+    z-index: 100;
+}
+
+#service1, #service2, #service3, #service4 {
+    z-index: 0;
+    display: none;
+}
+
+.product_img {
+    width: 45vw;
+    position: fixed;
+    top: 15vh;
+    left: 25vw;
+}
+.product_text {
+    font: normal normal 400 30px/30px Bahnschrift;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    position: fixed;
+    top: 50vh;
+    right: 14vw;
+}
+
+
+
+
+/*以下ハンバーガーメニューについて*/
+
+.menu-btn {
+    top: 43vh;
+    display: flex;
+    position: fixed;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    border: none;
+    width: 70px;
+    background: #FF008F 0% 0% no-repeat padding-box;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: absolute;
+}
+.menu-btn span {
+    width: 30px;
+}
+.menu-btn span:before {
+    bottom: 8px;
+    width: 30px;
+}
+.menu-btn span:after {
+    top: 8px;
+    width: 30px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    width: 30px;
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check:checked ~ .page_name {
+    opacity: 0;
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+
+.menu-content{
+    margin: 250px 0 0 30vw;
+    width: 70vw;
+    position: fixed;
+    height: 1000px;
+    z-index: 0;
+    opacity: 0;
+}
+
+.menu-content ul, .menu-content_work ul {
+    padding: 50px 20px;
+    margin: 0 20px;
+    height: 400px;
+    direction: rtl;
+}
+.menu-content ul li, .menu-content_work ul li {
+    list-style: none;
+}
+
+
+.menu_head_sp, .menu_content_sp {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#fff;
+    text-decoration: none;
+    position: relative;
+    font: normal normal 600 16px/20px sans-serif;
+}
+
+.menu_column {
+    display: flex;
+    width: 100%;
+    font: normal normal bold 35px/40px Bahnschrift;
+    letter-spacing: 0px;
+    margin: 50px 0;
+}
+.menu_a {
+    width:50%;
+    display: block;
+    color: #FFFFFF;
+}
+.menu_img {
+    width:60px;
+    margin-right: 30px;
+}
+
+
+.menu_head_sp {
+    padding: 20px 15px 3px 3px;
+}
+
+.menu_content_sp, .menu_content {
+    padding: 10px 5px;
+}
+
+.header_icon_list {
+    width: 220px;
+    margin-right: 0px;
+    margin-left: auto;
+    margin-top: 0px;
+}
+
+.header_icon_sp {
+    width: 30px;
+    margin-top: 60px;
+}
+
+#menu_brand_sp, #menu_company_sp, #menu_link_sp {
+    display: none;
+}
+
+.menu_content_sp:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.menu_content:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.up, .down {
+    float: right;
+    margin-top: 5px;
+}
+
+.up {
+    display: none;
+}
+
+.down {
+    display: block;
+}
+
+.menu_a_sp {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    margin: 10px 20px;
+}
+
+
+#menu-btn-check:checked ~ .menu-content {
+    z-index: 9999;
+    opacity: 1;
+}
+#menu-btn-check:checked ~ .menu-content_work {
+    left: 60%;/*メニューを画面内へ*/
+}
+
+.lb-prev {
+    left: -80px!important;
+    position: absolute;
+    opacity:1!important;
+}
+
+.lb-next {
+    right: -80px!important; 
+    position: absolute;
+    opacity:1!important;
+}
+
+.current {
+    border-bottom: 4px solid #000;
+}
+
+.google_a {
+    color: #000;
+    text-decoration: underline;
+}
+
