@@ -7,7 +7,12 @@ Recruit
 
 @section('content')
 <div class="content">
-    
+    <div class="top_text1">
+    Even if we are hated,<br>we need to exist to design<br>something new.
+    </div>
+    <div class="top_text2">
+    Our goal is to discover<br>something beyond black.<br>IT EVEN HAS WINGS TO FLY.
+    </div>
 
 </div>
 

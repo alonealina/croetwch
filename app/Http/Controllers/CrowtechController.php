@@ -20,14 +20,9 @@ class CrowtechController extends Controller
         return view('about');
     }
 
-    public function service()
+    public function design()
     {
-        return view('service');
-    }
-
-    public function graphic()
-    {
-        return view('graphic');
+        return view('design');
     }
 
     public function web()
@@ -35,19 +30,14 @@ class CrowtechController extends Controller
         return view('web');
     }
 
-    public function media()
+    public function engineer()
     {
-        return view('media');
+        return view('engineer');
     }
 
-    public function photo()
+    public function plan()
     {
-        return view('photo');
-    }
-
-    public function recruit()
-    {
-        return view('recruit');
+        return view('plan');
     }
 
     public function product()
@@ -70,11 +60,11 @@ class CrowtechController extends Controller
         $mail = $request->mail;
 
         Mail::send('mail', $data, function($message) use ($mail){
-            $message->to($mail, 'Test')->subject('【Ace&Co.】お問い合わせ完了のご案内');
+            $message->to($mail, 'Test')->subject('【CROWTECH】お問い合わせ完了のご案内');
         });
 
         Mail::send('mail_admin', $data, function($message) {
-            $message->to('info@ace-co.press', 'Test')->subject('【Ace&Co.】お問い合わせ受け付けのお知らせ');
+            $message->to('info@crowtech.jp', 'Test')->subject('【CROWTECH】お問い合わせ受け付けのお知らせ');
         });
 
         return redirect()->to('mail_comp');

@@ -46,25 +46,22 @@
     background-image: url(../img/about_bg.png);
 }
 
-.about_bg_sp {
-    background-image: url(../img/about_bg_sp.png);
+.design_bg {
+    background-image: url(../img/design_bg.png);
 }
 
-.recruit_bg {
-    background-image: url(../img/recruit_bg.png);
+.web_bg {
+    background-image: url(../img/web_bg.png);
 }
 
-.recruit_bg_sp {
-    background-image: url(../img/recruit_bg_sp.png);
+.engineer_bg {
+    background-image: url(../img/engineer_bg.png);
 }
 
-.service_bg {
-    background-image: url(../img/service_bg.png);
+.plan_bg {
+    background-image: url(../img/plan_bg.png);
 }
 
-.service_bg_sp {
-    background-image: url(../img/service_bg_sp.png);
-}
 
 
 
@@ -248,24 +245,20 @@ select {
     position: fixed;
     z-index: 100;
     color: #FFFFFF;
-    opacity: 1;
-    transition: 1s;
+    opacity: 0;
 }
 .content {
-    color: #000;
+    color: #fff;
     position: fixed;
-    margin: 250px 8vw 0 22vw;
+    width: 100%;
     height: 100%;
     overflow: scroll;
-    padding-bottom: 50px;
     /*スクロールバー非表示（IE・Edge）*/
     -ms-overflow-style: none;
     /*スクロールバー非表示（Firefox）*/
     scrollbar-width: none;
-    width: 70%;
     z-index: 1000;
-    opacity: 1;
-    transition: 1s;
+    opacity: 0;
 }
 .content_sp {
     color: #000;
@@ -287,6 +280,87 @@ select {
     display:none;
 }
 
+.top_text1 {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    width: 100%;
+    text-align: right;
+    font: normal normal bold 6vw/6vw Bahnschrift;
+    letter-spacing: 0px;
+    color: #FF008F;
+}
+
+.top_text2 {
+    position: fixed;
+    top: 62%;
+    right: 5%;
+    width: 100%;
+    text-align: right;
+    font: normal normal bold 3.5vw/3.5vw Bahnschrift;
+    letter-spacing: 0px;
+    color: #FF008F;
+}
+
+.work_column {
+    font: normal normal 100 30px/30px Bahnschrift;
+    letter-spacing: 0px;
+    position: absolute;
+    right: -250px;
+    transition: 0.5s;
+}
+
+.work_text {
+    text-align: right;
+    font: normal normal 400 18px/26px Bahnschrift;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    position: absolute;
+    right: 100px;
+    transition: 0.5s;
+    opacity: 0;
+    bottom: 100px;
+}
+
+#work_column1 {
+    top:100px;
+}
+
+#work_column2 {
+    top:140px;
+}
+
+#work_column3 {
+    top:180px;
+}
+
+#work_column4 {
+    top:220px;
+}
+
+.company_div {
+    width:800px;
+    position: fixed;
+    bottom:10%;
+    right:0%;
+    font: normal normal normal 18px/25px Bahnschrift;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.company_column {
+    width:100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.company_left {
+    width:30%;
+}
+
+.company_right {
+    width:70%;
+}
 
 .flex_div {
     margin-top: 50px;
@@ -338,9 +412,11 @@ select {
 
 .contact_name {
     margin: 10px 0 7px;
-    font: normal normal normal 20px/23px Arial;
+    font: normal normal bold 20px/23px Bahnschrift;
     letter-spacing: 0px;
-    color: #000;
+    color: #fff;
+    width: 180px;
+    text-align: right;
 }
 
 .contact_name_sp {
@@ -362,22 +438,22 @@ select {
 .send_button a {
     font-size: 15px;
     display: block;
-    width: 100px;
+    width: 130px;
     height: 40px;
-    margin-top: 10px;
+    margin-top: -20px;
     line-height: 40px;
-    background: #000;
+    background: #FF008F 0% 0% no-repeat padding-box;
     color: #fff;
     text-decoration: none;
     text-align: center;
-    margin-right: 30%;
+    margin-right: 0%;
     margin-left: auto;
 }
 
 .contact_div {
-    width: 80%;
-    margin: 50px auto 0px;
-    color: #000;
+    width: 50%;
+    margin: 30vh auto 0px;
+    color: #fff;
 }
 .contact_div_sp {
     padding:50px 20px;
@@ -412,7 +488,7 @@ select {
 }
 
 .mail_comp_div {
-    margin: 100px;
+    margin: 40vh 0;
     font: normal normal 300 27px/34px serif;
     text-align: center;
 }
@@ -548,10 +624,6 @@ select {
 #menu-btn-check:checked ~ .menu-btn span::after {
     top: 0;
     transform: rotate(-45deg);
-}
-
-#menu-btn-check:checked ~ .page_name {
-    opacity: 0;
 }
 
 #menu-btn-check {

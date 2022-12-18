@@ -32,19 +32,19 @@
             <label for="menu-btn-check" class="menu-btn" id="menu-btn"><span></span></label>
             <div class="menu-content" id="menu-content">
                 <div class="menu_column">
-                    <a href="{{ route('index') }}" class="menu_a"><img src="{{ asset('img/icon_design.png') }}" class="menu_img">Design</a>
+                    <a href="{{ route('design') }}" class="menu_a"><img src="{{ asset('img/icon_design.png') }}" class="menu_img">Design</a>
                     <a href="{{ route('product') }}" class="menu_a"><img src="{{ asset('img/icon_product.png') }}" class="menu_img">Product viewer</a>
                 </div>
                 <div class="menu_column">
-                    <a href="{{ route('index') }}" class="menu_a"><img src="{{ asset('img/icon_web.png') }}" class="menu_img">Web creation</a>
-                    <a href="{{ route('index') }}" class="menu_a"><img src="{{ asset('img/icon_contact.png') }}" class="menu_img">Contact</a>
+                    <a href="{{ route('web') }}" class="menu_a"><img src="{{ asset('img/icon_web.png') }}" class="menu_img">Web creation</a>
+                    <a href="{{ route('contact') }}" class="menu_a"><img src="{{ asset('img/icon_contact.png') }}" class="menu_img">Contact</a>
                 </div>
                 <div class="menu_column" style="margin: 30px 0;">
-                    <a href="{{ route('index') }}" class="menu_a"><img src="{{ asset('img/icon_engineer.png') }}" class="menu_img">Engineering</a>
-                    <a href="{{ route('index') }}" class="menu_a"><img src="{{ asset('img/icon_about.png') }}" class="menu_img">About us</a>
+                    <a href="{{ route('engineer') }}" class="menu_a"><img src="{{ asset('img/icon_engineer.png') }}" class="menu_img">Engineering</a>
+                    <a href="{{ route('about') }}" class="menu_a"><img src="{{ asset('img/icon_about.png') }}" class="menu_img">About us</a>
                 </div>
                 <div class="menu_column" style="margin: 30px 0;">
-                    <a href="{{ route('index') }}" class="menu_a"><img src="{{ asset('img/icon_plan.png') }}" class="menu_img">Planning</a>
+                    <a href="{{ route('plan') }}" class="menu_a"><img src="{{ asset('img/icon_plan.png') }}" class="menu_img">Planning</a>
                 </div>
             </div>
         </div>

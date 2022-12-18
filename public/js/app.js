@@ -1,11 +1,20 @@
 window.onload = function() {
+    $('.page_name').css( 'opacity', '1' );
+    $('.page_name').css( 'transition', '1s' );
+    $('.content').css( 'opacity', '1' );
+    $('.content').css( 'transition', '1s' );
     $('.menu-content').css( 'transition', '1s' );
- }
+    setTimeout( ()=>{    $('#work_column1').css( 'right', '100px' );} ,1000);
+    setTimeout( ()=>{    $('#work_column2').css( 'right', '100px' );} ,1200);
+    setTimeout( ()=>{    $('#work_column3').css( 'right', '100px' );} ,1400);
+    setTimeout( ()=>{    $('#work_column4').css( 'right', '100px' );} ,1600);
+    setTimeout( ()=>{    $('.work_text').css( 'opacity', '1' );} ,2200);
+
+}
 
 function clickMenuBtn() {
     checkbox = document.getElementById('menu-btn-check');
     if (checkbox.checked) {
-        $('#menu-content').css( 'display', 'block' );
         $('.page_name').css( 'opacity', '0' );
         $('.content').css( 'opacity', '0' );
     } else {
