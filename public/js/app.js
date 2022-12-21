@@ -8,6 +8,10 @@ window.onload = function() {
     setTimeout( ()=>{    $('#work_column2').css( 'right', '100px' );} ,1200);
     setTimeout( ()=>{    $('#work_column3').css( 'right', '100px' );} ,1400);
     setTimeout( ()=>{    $('#work_column4').css( 'right', '100px' );} ,1600);
+    setTimeout( ()=>{    $('#work_column1_sp').css( 'right', '20px' );} ,1000);
+    setTimeout( ()=>{    $('#work_column2_sp').css( 'right', '20px' );} ,1200);
+    setTimeout( ()=>{    $('#work_column3_sp').css( 'right', '20px' );} ,1400);
+    setTimeout( ()=>{    $('#work_column4_sp').css( 'right', '20px' );} ,1600);
     setTimeout( ()=>{    $('.work_text').css( 'opacity', '1' );} ,2200);
 
 }

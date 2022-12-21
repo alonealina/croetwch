@@ -49,16 +49,33 @@ CONTACT
 
 @section('content_sp')
 
-<div class="wrapper">
-    <ul class="slider">
-        <li class="slider-item slider-item01_sp"></li>
-        <li class="slider-item slider-item02_sp"></li>
-        <li class="slider-item slider-item03_sp"></li>
-    </ul>
+<div class="content">
+    <div class="contact_div_sp">
+        <form name="mail_form" action="{{ route('mail_send') }}" method="post" enctype="multipart/form-data">
+            @csrf
+
+            <div class="contact_name_sp">Name</div>
+            <input class="form_text_sp" placeholder="" name="name" type="text" id="name">
+
+            <div class="contact_name_sp">Phone number</div>
+            <input class="form_text_sp" placeholder="" name="tel" type="text" id="tel">
+
+            <div class="contact_name_sp">E-mail</div>
+            <input class="form_text_sp" placeholder="" name="mail" type="text" id="mail">
+
+            <div class="contact_name_sp">Message</div>
+            <textarea class="form_textarea_sp" name="content" id="content"></textarea>
+
+            <div class=""></div>
+            <div class="error_message" id="error_message"></div>
+
+            <div class="send_button_sp">
+                <a href="#" onclick="clickMailButton()">SEND</a>
+            </div>
+        </form>
+    </div>
 </div>
 
-<a class="sp_top_logo" href="{{ route('index') }}" id="sp_top_logo">
-    <img src="{{ asset('img/sp_top_logo.png') }}" class="sp_top_img" alt="">
-</a>
-
+<div class="bg_div about_bg_sp"></div>
+<script src="{{ asset('js/contact.js') }}"></script>
 @endsection

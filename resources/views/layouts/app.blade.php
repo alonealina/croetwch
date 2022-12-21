@@ -62,48 +62,33 @@
     @else
     <div id="registration_sp">
         <body>
-            <header class="header_sp" style="">
-                @if (\Route::currentRouteName() != 'index')
-                <a class="logo_a_sp" href="{{ route('index') }}">
-                    <img src="{{ asset('img/sp_top_logo.png') }}" class="logo_img_sp" alt="">
-                </a>
-                @endif
-                <div class="hamburger-menu"
-                @if (\Route::currentRouteName() == 'index') style="padding-top: 30px;" @endif >
-                    <input type="checkbox" id="menu-btn-check" onclick="clickMenuBtn()">
-                    <label for="menu-btn-check" class="menu-btn" id="menu-btn"><span></span></label>
-                    <div class="menu-content" id="menu-content">
-                        <input type="checkbox" id="menu-btn-check2" onclick="clickMenuBtn2()">
-                        <label for="menu-btn-check2" class="menu-btn2" id="menu-btn2"><span></span></label>
-                        <ul>
-                            <li>
-                                <a href="{{ route('about') }}" class="menu_content_sp">About</a>
-                            </li>
-                            <li>
-                            <a href="#" class="menu_content_sp" onclick="clickService()">Service</a>
-                            </li>
-                            <li class="service_list" id="service_list">
-                                <a href="{{ route('graphic') }}" class="service_column_sp">Graphic Design</a>
-                                <a href="{{ route('web') }}" class="service_column_sp">Web Design</a>
-                                <a href="{{ route('media') }}" class="service_column_sp">Media Design</a>
-                                <a href="{{ route('photo') }}" class="service_column_sp">Photo + Movie</a>
-                            </li>
-                            <li>
-                            <a href="{{ route('recruit') }}" class="menu_content_sp">Recruit</a>
-                            </li>
-                            <li>
-                            <a href="{{ route('contact') }}" class="menu_content_sp">Contact</a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-                </div>
-            </header>
-            <div class="header_page_flex_sp">
-                @yield('header_page_sp')
+        <div class="header_logo_div_sp">
+            <a class="" href="{{ route('index') }}">
+                <img src="{{ asset('img/logo.png') }}" class="logo_img_sp" alt="">
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check" onclick="clickMenuBtn()">
+            <label for="menu-btn-check" class="menu-btn" id="menu-btn"><span></span></label>
+            <div class="menu-content" id="menu-content">
+                <a href="{{ route('design') }}" class="menu_a"><img src="{{ asset('img/icon_design.png') }}" class="menu_img">Design</a>
+                <a href="{{ route('web') }}" class="menu_a"><img src="{{ asset('img/icon_web.png') }}" class="menu_img">Web creation</a>
+                <a href="{{ route('engineer') }}" class="menu_a" style="margin-bottom: 15px;"><img src="{{ asset('img/icon_engineer.png') }}" class="menu_img">Engineering</a>
+                <a href="{{ route('plan') }}" class="menu_a"><img src="{{ asset('img/icon_plan.png') }}" class="menu_img">Planning</a>
+                <a href="{{ route('product') }}" class="menu_a" style="margin-bottom: 30px;"><img src="{{ asset('img/icon_product.png') }}" class="menu_img">Product viewer</a>
+                <a href="{{ route('contact') }}" class="menu_a"><img src="{{ asset('img/icon_contact.png') }}" class="menu_img">Contact</a>
+                <a href="{{ route('about') }}" class="menu_a" style="margin-bottom: 10px;"><img src="{{ asset('img/icon_about.png') }}" class="menu_img">About us</a>
             </div>
-            @yield('content_sp')
+        </div>
+
+        @if (\Route::currentRouteName() != 'index')
+        <div class="page_name">
+            <span id="page_name">@yield('page_name')</span>
+        </div>
+        @endif
+
+        @yield('content_sp')
+
         </body>
     </div>
     @if (\Route::currentRouteName() != 'shop_list') <script src="{{ asset('js/locomotive-scroll.min.js') }}"></script> @endif

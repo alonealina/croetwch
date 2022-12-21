@@ -62,6 +62,30 @@
     background-image: url(../img/plan_bg.png);
 }
 
+.top_bg_sp {
+    background-image: url(../img/top_bg_sp.png);
+}
+
+.about_bg_sp {
+    background-image: url(../img/about_bg_sp.png);
+}
+
+.design_bg_sp {
+    background-image: url(../img/design_bg_sp.png);
+}
+
+.web_bg_sp {
+    background-image: url(../img/web_bg_sp.png);
+}
+
+.engineer_bg_sp {
+    background-image: url(../img/engineer_bg_sp.png);
+}
+
+.plan_bg_sp {
+    background-image: url(../img/plan_bg_sp.png);
+}
+
 
 
 
@@ -183,6 +207,14 @@ select {
     z-index: 9000;
 }
 
+.header_logo_div_sp {
+    width: 100%;
+    height: 120px;
+    padding: 15px 10px;
+    position: fixed;
+    z-index: 9000;
+}
+
 .header_logo {
     margin: auto;
     display: block;
@@ -190,6 +222,10 @@ select {
 
 .logo_img {
     width: 8vw;
+}
+
+.logo_img_sp {
+    width: 15vw;
 }
 
 .sp_top_logo {
@@ -247,6 +283,7 @@ select {
     color: #FFFFFF;
     opacity: 0;
 }
+
 .content {
     color: #fff;
     position: fixed;
@@ -302,6 +339,28 @@ select {
     color: #FF008F;
 }
 
+.top_text1_sp {
+    position: fixed;
+    top: 14%;
+    right: 10%;
+    width: 100%;
+    text-align: right;
+    font: normal normal bold 10vw/10vw Bahnschrift;
+    letter-spacing: 0px;
+    color: #FF008F;
+}
+
+.top_text2_sp {
+    position: fixed;
+    bottom: 22%;
+    right: 5%;
+    width: 100%;
+    text-align: right;
+    font: normal normal bold 8vw/8vw Bahnschrift;
+    letter-spacing: 0px;
+    color: #FF008F;
+}
+
 .work_column {
     font: normal normal 100 30px/30px Bahnschrift;
     letter-spacing: 0px;
@@ -347,6 +406,15 @@ select {
     letter-spacing: 0px;
     color: #FFFFFF;
 }
+.company_div_sp {
+    width: 75%;
+    position: fixed;
+    bottom: 15%;
+    right: 3%;
+    font: normal normal normal 10px/15px Bahnschrift;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
 
 .company_column {
     width:100%;
@@ -356,6 +424,9 @@ select {
 
 .company_left {
     width:30%;
+}
+.company_left_sp {
+    width:43%;
 }
 
 .company_right {
@@ -420,10 +491,10 @@ select {
 }
 
 .contact_name_sp {
-    margin: 10px 0 7px;
-    font: normal normal normal 18px/22px Himalaya;
+    font: normal normal bold 12px/16px Bahnschrift;
     letter-spacing: 0px;
-    color: #000;
+    color: #fff;
+    width: 180px;
 }
 
 .form_text {
@@ -433,6 +504,21 @@ select {
 .form_textarea {
     width: 70%;
     height: 250px;
+}
+
+.form_text_sp {
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.7);
+    border: none;
+    padding: 3px;
+}
+.form_textarea_sp {
+    width: 100%;
+    height: 150px;
+    background: rgba(255,255,255,0.7);
+    border: none;
+    padding: 3px;
 }
 
 .send_button a {
@@ -449,6 +535,19 @@ select {
     margin-right: 0%;
     margin-left: auto;
 }
+.send_button_sp a {
+    font-size: 12px;
+    display: block;
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 30px;
+    background: #FF008F 0% 0% no-repeat padding-box;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px auto;
+}
 
 .contact_div {
     width: 50%;
@@ -456,7 +555,9 @@ select {
     color: #fff;
 }
 .contact_div_sp {
-    padding:50px 20px;
+    width: 80%;
+    margin: 200px auto 0px;
+    color: #fff;
 }
 .error_message {
     text-align: center;
@@ -479,13 +580,6 @@ select {
     font: normal normal normal 26px/30px Himalaya;
     color: #000;
 }
-.form_textarea_sp {
-    width: 100%;
-    height: 170px;
-}
-.form_text_sp {
-    width: 100%;
-}
 
 .mail_comp_div {
     margin: 40vh 0;
@@ -494,11 +588,9 @@ select {
 }
 
 .mail_comp_div_sp {
-    font: normal normal normal 12px/14px Arial;
-    letter-spacing: 0px;
-    color: #000000;
+    margin: 40vh 0;
+    font: normal normal 300 15px/21px serif;
     text-align: center;
-    margin-top: 50px;
 }
 
 .service_menu {
@@ -562,11 +654,22 @@ select {
     right: 14vw;
 }
 
-
-
+.product_img_sp {
+    width: 90vw;
+    position: fixed;
+    top: 210px;
+    left: 5vw;
+}
+.product_text_sp {
+    font: normal normal 400 20px/30px Bahnschrift;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    position: fixed;
+    top: 430px;
+    left: 36vw;
+}
 
 /*以下ハンバーガーメニューについて*/
-
 .menu-btn {
     top: 43vh;
     display: flex;
@@ -679,29 +782,12 @@ select {
     margin-right: 30px;
 }
 
-
 .menu_head_sp {
     padding: 20px 15px 3px 3px;
 }
 
 .menu_content_sp, .menu_content {
     padding: 10px 5px;
-}
-
-.header_icon_list {
-    width: 220px;
-    margin-right: 0px;
-    margin-left: auto;
-    margin-top: 0px;
-}
-
-.header_icon_sp {
-    width: 30px;
-    margin-top: 60px;
-}
-
-#menu_brand_sp, #menu_company_sp, #menu_link_sp {
-    display: none;
 }
 
 .menu_content_sp:hover {
@@ -711,19 +797,6 @@ select {
 .menu_content:hover {
     color: #fff;
     text-decoration: none;
-}
-
-.up, .down {
-    float: right;
-    margin-top: 5px;
-}
-
-.up {
-    display: none;
-}
-
-.down {
-    display: block;
 }
 
 .menu_a_sp {
@@ -742,24 +815,198 @@ select {
     left: 60%;/*メニューを画面内へ*/
 }
 
-.lb-prev {
-    left: -80px!important;
-    position: absolute;
-    opacity:1!important;
-}
 
-.lb-next {
-    right: -80px!important; 
-    position: absolute;
-    opacity:1!important;
-}
+@media screen and (max-width: 500px) {
 
-.current {
-    border-bottom: 4px solid #000;
-}
+    .menu-btn {
+        top: 0vh;
+        right: 0;
+        display: flex;
+        position: fixed;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        border: none;
+        width: 70px;
+        background: #FF008F 0% 0% no-repeat padding-box;
+    }
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after {
+        content: '';
+        display: block;
+        height: 2px;
+        border-radius: 3px;
+        background-color: #fff;
+        position: absolute;
+    }
+    .menu-btn span {
+        width: 30px;
+    }
+    .menu-btn span:before {
+        bottom: 8px;
+        width: 30px;
+    }
+    .menu-btn span:after {
+        top: 8px;
+        width: 30px;
+    }
+    
+    #menu-btn-check:checked ~ .menu-btn span {
+        background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+    }
+    #menu-btn-check:checked ~ .menu-btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    #menu-btn-check:checked ~ .menu-btn span {
+        background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+    }
+    #menu-btn-check:checked ~ .menu-btn span::before {
+        width: 30px;
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    #menu-btn-check {
+        display: none;
+    }
+    
+    
+    .menu-content{
+        margin: 200px 0 0 25vw;
+        width: 70vw;
+        position: fixed;
+        height: 1000px;
+        z-index: 0;
+        opacity: 0;
+    }
+    
+    .menu-content ul, .menu-content_work ul {
+        padding: 50px 20px;
+        margin: 0 20px;
+        height: 400px;
+        direction: rtl;
+    }
+    .menu-content ul li, .menu-content_work ul li {
+        list-style: none;
+    }
+    
+    .menu_head_sp, .menu_content_sp {
+        display: block;
+        width: 100%;
+        font-size: 15px;
+        box-sizing: border-box;
+        color:#fff;
+        text-decoration: none;
+        position: relative;
+        font: normal normal 600 16px/20px sans-serif;
+    }
+    
+    .menu_column {
+        display: flex;
+        width: 100%;
+        font: normal normal bold 35px/40px Bahnschrift;
+        letter-spacing: 0px;
+        margin: 50px 0;
+    }
+    .menu_a {
+        width:100%;
+        display: block;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        font:normal normal bold 20px/20px Bahnschrift;
+    }
+    .menu_img {
+        width:40px;
+        margin-right: 30px;
+    }
+    
+    .menu_head_sp {
+        padding: 20px 15px 3px 3px;
+    }
+    
+    .menu_content_sp, .menu_content {
+        padding: 10px 5px;
+    }
+    
+    .menu_content_sp:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    .menu_content:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .menu_a_sp {
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        margin: 10px 20px;
+    }
 
-.google_a {
-    color: #000;
-    text-decoration: underline;
-}
+    #menu-btn-check:checked ~ .menu-content {
+        z-index: 9999;
+        opacity: 1;
+    }
+    #menu-btn-check:checked ~ .menu-content_work {
+        left: 60%;/*メニューを画面内へ*/
+    }
+    
+    .page_name {
+        margin: 5vw 15vw;
+        font: normal normal 400 6vw/6vw Bahnschrift;
+        letter-spacing: 1px;
+        color: #545454;
+        position: fixed;
+        z-index: 100;
+        color: #FFFFFF;
+        opacity: 0;
+        margin-top: 140px;
+        margin-left: 10px;
+    }
+    .work_text {
+        text-align: right;
+        font: normal normal 400 10px/14px Bahnschrift;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        position: absolute;
+        right: 20px;
+        transition: 0.5s;
+        opacity: 0;
+        top: 320px;
+    }
 
+    .work_column {
+        font: normal normal 100 20px/20px Bahnschrift;
+        letter-spacing: 0px;
+        position: absolute;
+        right: -250px;
+        transition: 0.5s;
+    }
+    #work_column1_sp {
+        top:170px;
+    }
+    #work_column2_sp {
+        top:200px;
+    }
+    #work_column3_sp {
+        top:230px;
+    }
+    #work_column4_sp {
+        top:260px;
+    }
+    
+    
+}

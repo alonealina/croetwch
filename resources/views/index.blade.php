@@ -22,16 +22,16 @@ Recruit
 
 @section('content_sp')
 
-<div class="wrapper">
-    <ul class="slider">
-        <li class="slider-item slider-item01_sp"></li>
-        <li class="slider-item slider-item02_sp"></li>
-        <li class="slider-item slider-item03_sp"></li>
-    </ul>
+<div class="content">
+    <div class="top_text1_sp">
+    Even if we are<br>hated,we need to<br>exist to DESIGN<br>something new.
+    </div>
+    <div class="top_text2_sp">
+    Our goal is<br>to discover<br>something<br>beyond black.<br><br>IT EVEN HAS<br>WINGS TO FLY.
+    </div>
+
 </div>
 
-<a class="sp_top_logo" href="{{ route('index') }}" id="sp_top_logo">
-    <img src="{{ asset('img/sp_top_logo.png') }}" class="sp_top_img" alt="">
-</a>
+<div class="bg_div top_bg_sp"></div>
 
 @endsection
