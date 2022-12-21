@@ -38,6 +38,11 @@
     src: url('../font/Microsoft-Himalaya.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: "Bahnschrift";
+    src: url('../font/bahnschrift.ttf') format('truetype');
+}
+
 .top_bg {
     background-image: url(../img/top_bg.png);
 }
@@ -348,6 +353,7 @@ select {
     font: normal normal bold 10vw/10vw Bahnschrift;
     letter-spacing: 0px;
     color: #FF008F;
+    height: 180px;
 }
 
 .top_text2_sp {
@@ -379,6 +385,7 @@ select {
     transition: 0.5s;
     opacity: 0;
     bottom: 100px;
+    transform: scale(0.9, 1);
 }
 
 #work_column1 {
@@ -407,13 +414,19 @@ select {
     color: #FFFFFF;
 }
 .company_div_sp {
-    width: 75%;
+    width: 100%;
     position: fixed;
     bottom: 15%;
-    right: 3%;
     font: normal normal normal 10px/15px Bahnschrift;
     letter-spacing: 0px;
     color: #FFFFFF;
+    padding-left: 12%;
+    padding-top: 20px;
+    background: rgba(0,0,0,0.5);
+    text-shadow:
+        0 2px 0 #888,
+        0 3px 0 #888,
+        0 4px 5px #333;
 }
 
 .company_column {
@@ -432,7 +445,9 @@ select {
 .company_right {
     width:70%;
 }
-
+.company_right a {
+    color: #fff;
+}
 .flex_div {
     margin-top: 50px;
     width: 100%;
@@ -1006,7 +1021,31 @@ select {
     }
     #work_column4_sp {
         top:260px;
+    }   
+}
+
+
+@media screen and (min-width: 2000px) {
+    .page_name {
+        margin: 5vw 15vw;
+        font: normal normal 400 80px/80px Bahnschrift;
+        letter-spacing: 4px;
+        color: #545454;
+        position: fixed;
+        z-index: 100;
+        color: #FFFFFF;
+        opacity: 0;
+        transform: scale(1.1, 1);
+    }
+
+    .top_text1 {
+        font: normal normal bold 5vw/5vw Bahnschrift;
     }
     
-    
+    .top_text2 {
+        font: normal normal bold 2.5vw/3vw Bahnschrift;
+    }
+    .logo_img {
+        width: 6vw;
+    }
 }

@@ -83,7 +83,7 @@
 
         @if (\Route::currentRouteName() != 'index')
         <div class="page_name">
-            <span id="page_name">@yield('page_name')</span>
+            <span id="page_name" style="height: 40px;display: block;">@yield('page_name')</span>
         </div>
         @endif
 
